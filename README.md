@@ -1,5 +1,6 @@
 # Covid-tracker
-Real time Covid stats
+Real time Covid stats.
+
 An interactive app to retrieve daily and total confirmed Covid cases and deaths for 175 countries.
 We combined the Oxford Covid-19 Government response tracker dataset and World Bank World Population data to calculate daily cases per 100K inhabitants
 and daily deaths per million inhabitants as rolling 7 day averages. Total confirmed cases and total confirmed deaths are likewise calculated on a per 100K base.
