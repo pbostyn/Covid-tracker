@@ -28,11 +28,6 @@ WorldPop <- read.csv("WorldPop.csv", header=TRUE)
 WorldPop <- WorldPop[, c("Country.Name", "Country.Code", "X2019")]
 Countrycodes <- unique(Covid_Gov_res$CountryCode)
 Countrycodes <- Countrycodes[! Countrycodes %in% c("TKM", "TON", "RKS", "TWN", "AND", "BHR", "QAT", "SMR")]
-#Eupluscodes <- (read.csv("EUcodelist.csv"))$Codes
-#LAcodes <- (read.csv("LA.csv"))$Lat_Am
-#SEAcodes <- (read.csv("SEAS.csv"))$S_E_Asia
-#OECDcodes <- read.csv("OECDcodes.csv", header=FALSE)
-#OECDcodes <- OECDcodes[, 1]
 
 
 CountryGroupProfile <- function(codelist) {
