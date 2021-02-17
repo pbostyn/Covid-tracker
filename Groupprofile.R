@@ -24,8 +24,6 @@ profilecol <- as.data.frame(matrix(ncol=length(pcol), nrow=0,
 
 url <- "https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv"
 Covid_Gov_res <- read.csv(url, header=TRUE)
-write.csv(Covid_Gov_res, "Covid_Gov_res.csv", row.names=FALSE)
-#Covid_Gov_res <- read.csv("Covid_Gov_res.csv", header=TRUE)
 WorldPop <- read.csv("WorldPop.csv", header=TRUE)
 WorldPop <- WorldPop[, c("Country.Name", "Country.Code", "X2019")]
 Countrycodes <- unique(Covid_Gov_res$CountryCode)
