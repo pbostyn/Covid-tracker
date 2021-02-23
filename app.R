@@ -84,7 +84,7 @@ server <- function(input, output) {
       geom_line(size=1.15) + ylab("Daily cases / 100.000 inh.") +
       ggtitle("Daily cases per 100.000 inh.") + 
       scale_color_discrete(name="Country codes") +
-      scale_x_date(limits=as.Date(c("2021-01-01", NA)), date_breaks = "2 day",
+      scale_x_date(limits=as.Date(c("2021-01-01", NA)), date_breaks = "4 day",
                    date_labels="%d / %m") + theme_solarized() +
       theme(plot.title = element_text(hjust = 0.5))
   })
@@ -99,7 +99,7 @@ server <- function(input, output) {
       geom_line(size=1.15) + ylab("Daily deaths per million inh.") +
       ggtitle("Daily deaths per million inh.") + 
       scale_color_discrete(name="Country codes") +
-      scale_x_date(limits=as.Date(c("2021-01-01", NA)), date_breaks = "2 day",
+      scale_x_date(limits=as.Date(c("2021-01-01", NA)), date_breaks = "4 day",
                    date_labels="%d / %m ") + theme_solarized() +
       theme(plot.title = element_text(hjust = 0.5))
   })
